@@ -3,93 +3,120 @@
 <title>Laporan Web IPA</title>
 </head>
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
-background-image: url("bg web.jpeg");
-background-repeat: no-repeat;
-background-attachment: fixed;
-margin-left: 35px;
-margin-top: 50px;
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
 }
 
 .topnav {
   overflow: hidden;
-  background: inherit;
-  background-attachment: fixed;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  background-color: #CDDDDC;
 }
+
 
 .topnav a {
   float: left;
   display: block;
-  color: black;
+  background-color: #CDDDDC;
+  color: #353A34;
   text-align: center;
-  padding: 12px 14px;
+  font-size: 16px;
+  font-family: "georgia", serif;
+  padding: 12px;
+  min-width: 218.8px;
+  height: 40px;
   text-decoration: none;
 }
 
 .topnav a:hover {
-  background-color: #ffffff;
-  color: #693F1F;
+  background-color: #D0A47D;
+  color: #353A34;
 }
 
-.sidenav {
-  margin: 0;
-  padding: 0;
-  width: 190px;
-  z-index: 0;
-  top: 55;
-  left: 10;
-  height: 100%;
-  overflow: auto;
-  position: fixed;
+.leftcolumn {   
+  float: left;
+  width: 75%;
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 18px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
 }
 
-.sidenav a:hover {
-  color: #693F1F;
+.card {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #CDDDDC;
 }
 
-.main {
-  margin-left: 60px;
-  padding: 0px 10px;
+.gallery {
+  padding: 20px;
+  margin-top: 20px;
+  background-image: url("gallery.png");
+  background-repeat: no-repeat;
 }
 
-h2, h3, h4, table {
-color: #693F1F;
-margin-left: 100px;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-p {
-text-indent: 45px;
-margin-left: 130px;
-margin-right: 100px;
-color: #693F1F;
+.creator {
+  background-color: #01A671;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 55px;
+  border-width: 10px;
+  overflow: hidden;
 }
 
-ol {
-margin-left: 180px;
-margin-right: 60px;
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
 }
 
 ul {
-margin-left: 160px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width = 100px;
+}
+
+li a {
+  display: block;
+  color: #818181;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #693F1F;
+}
+
+ol {
+margin-left: 25px;
 margin-right: 60px;
-color: #693F1F;
 }
 
 li {
-margin-bottom: 20px;
+margin-bottom: 25px;
 color: #693F1F;
+}
+
+p {
+margin-left: 30px;
+margin-right: 60px;
+text-indent: 45px;
 }
 
 @media screen and (max-height: 450px) {
@@ -98,28 +125,39 @@ color: #693F1F;
 }
 </style>
 <body>
+<img src = "banner il ipa.jpg" width = 1313>
+
 <div class="topnav">
-  <a href="isi.html">HOME</a>
-  <a href="bab1.html">BAB I</a>
-  <a href="bab2.html">BAB II</a>
-  <a href="bab3.html">BAB III</a>
-  <a href="bab4.html">BAB IV</a>
-  <a href="bab5.html">BAB V</a>
-  <a href="pustaka.html">DAFTAR PUSTAKA & LAMPIRAN</a>
-  <a href="autobiografi.html">AUTOBIOGRAFI</a>
-  <a href="presentasi.html">PRESENTATION</a>
+  <a href="index.html"><B>HOME</B></a>
+  <a href="pengantar.html"><b>KATA PENGANTAR</b></a>
+  <a href="abstrak.html"><b>ABSTRAK</b></a>
+  <a href="bab1.html"><b>BAB I</b></a>
+  <a href="bab2.html"><b>BAB II</b></a>
+  <a href="bab3.html"><b>BAB III</b></a>
+  <a href="bab4.html"><b>BAB IV</b></a>
+  <a href="bab5.html"><b>BAB V</b></a>
+  <a href="autobiografi.html"><b>DATA PENULIS</b></a>
+  <a href="pustaka.html"><b>DAFTAR PUSTAKA</b></a>
+  <a href="presentasi.html"><b>PRESENTATION</b></a>
+  <a href="games.html"><b>GAMES</b></a>
 </div>
 
-<hr></hr>
-
-<div class="sidenav">
-  <a href="#pustaka">Daftar Pustaka</a>
-  <a href="#lampiran-1">Lampiran 1</a>
-  <a href="#lampiran-2">Lampiran 2</a>
-</div>
-
-<div class = "main"><a name = "pustaka">
-<h4 align="center">DAFTAR PUSTAKA</h4>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+	<table>
+	<tr>
+	<td width = 80 valign = "top">
+	<ul>
+	<li><a href="#pustaka">Daftar Pustaka</a></li>
+	<li><a href="#lampiran-1">Lampiran 1</a></li>
+	<li><a href="#lampiran-2">Lampiran 2</a></li>
+	</td>
+<td width = 800>
+<a name = "pustaka">
+<font face = "times new roman" color = #693F1F>
+<h2 align="center">DAFTAR PUSTAKA</h2>
+<font face = "times new roman" size = 4 color = #693F1F>
 <p style = "text-indent: -50px; padding-left: 50px">Ruparupa.com. (2017, 21 Maret). Apa itu Plastik Biodegradable? Diakses pada 9  November 2022,  dari 
 <a href = "https://www.ruparupa.com/blog/apa-sih-plastik-biodegradable/">https://www.ruparupa.com/blog/apa-sih-plastik-biodegradable/</a></p><br>
 
@@ -134,46 +172,50 @@ color: #693F1F;
 </a></p><br>
 
 <p style = "text-indent: -50px; padding-left: 50px">Nicander Steven Fu. Pandangan Katolik Tentang Alam. Diakses pada 8 Februari, dari
-<a href = "https://binus.ac.id/character-building/2020/03/pandangan-katolik-tentang-alam/">https://binus.ac.id/character-building/2020/03/pandangan-katolik-tentang-alam/</a></p><br>
+<a href = "https://binus.ac.id/character-building/2020/03/pandangan-katolik-tentang-alam/">https://binus.ac.id/character-building/2020/03/pandangan-katolik-tentang-alam/</a></p><br></font>
 
 <a name="lampiran-1">
-<h4 align="center">LAMPIRAN</h4>
+<font face = "times new roman" color = #693F1F>
+<h2 align="center">LAMPIRAN</h2>
+<font face = "times new roman" size = 4 color = #693F1F>
 <b><p>Lampiran 1 - Alur Pengerjaan Projek</p></b>
 <p align = "center">
 <table align = "center" border = 1 cellpadding = 10px>
 <tr>
-<th>No.</th>
-<th>Tanggal</th>
-<th>Proses</th>
+<th><font face = "times new roman" color = #693F1F>No.</th></font>
+<th><font face = "times new roman" color = #693F1F>Tanggal</th></font>
+<th><font face = "times new roman" color = #693F1F>Proses</th></font>
 </tr>
 <tr>
-<td>1.</td>
-<td>24 Agustus 2022 - Januari 2023</td>
-<td>Membuat laporan mengenai percobaan yang dilakukan</td>
+<td><font face = "times new roman" color = #693F1F>1.</td></font>
+<td><font face = "times new roman" color = #693F1F>24 Agustus 2022 - Januari 2023</td></font>
+<td><font face = "times new roman" color = #693F1F>Membuat laporan mengenai percobaan yang dilakukan</td></font>
 </tr>
 <tr>
-<td>2.</td>
-<td>27 Oktober - 7 November 2022</td>
-<td>Menyiapkan alat dan bahan</td>
+<td><font face = "times new roman" color = #693F1F>2.</td></font>
+<td><font face = "times new roman" color = #693F1F>27 Oktober - 7 November 2022</td></font>
+<td><font face = "times new roman" color = #693F1F>Menyiapkan alat dan bahan</td></font>
 </tr>
 <tr>
-<td>3.</td>
-<td>9 - 15 November 2022</td>
-<td>Membuat sendok <i>biodegradable</i></td>
+<td><font face = "times new roman" color = #693F1F>3.</td></font>
+<td><font face = "times new roman" color = #693F1F>9 - 15 November 2022</td></font>
+<td><font face = "times new roman" color = #693F1F>Membuat sendok <i>biodegradable</i></td></font>
 </tr>
 <tr>
-<td>4.</td>
-<td>Setelah sendok <i>biodegradable</i> dibuat</td>
-<td>Uji coba dan modifikasi produk sendok <i>biodegradable</i></td>
+<td><font face = "times new roman" color = #693F1F>4.</td></font>
+<td><font face = "times new roman" color = #693F1F>Setelah sendok <i>biodegradable</i> dibuat</td></font>
+<td><font face = "times new roman" color = #693F1F>Uji coba dan modifikasi produk sendok <i>biodegradable</i></td></font>
 </tr>
 <tr>
-<td>5.</td>
-<td>2 November 2022 – Februari 2023</td>
-<td>Membuat <i>website</i> tentang percobaan yang dilaksanakan</td>
+<td><font face = "times new roman" color = #693F1F>5.</td></font>
+<td><font face = "times new roman" color = #693F1F>2 November 2022 – Februari 2023</td></font>
+<td><font face = "times new roman" color = #693F1F>Membuat <i>website</i> tentang percobaan yang dilaksanakan</td></font>
 </tr>
-</table><a name="lampiran-2"></p><br>
+</table></p><br>
 
-<b><p>Lampiran 2 - Foto Percobaan Pertama</p></b>
+<a name="lampiran-2">
+<font face = "times new roman" size = 4 color = #693F1F>
+<b><p>Lampiran 2 - Foto Percobaan Pertama</p></b></font>
 <p align = "center">
 <img src = "foto4.jpeg" width = 200>
 <img src = "foto5.jpeg" width = 200>
@@ -181,6 +223,43 @@ color: #693F1F;
 <img src = "foto7.jpeg" width = 320>
 <img src = "foto8.jpeg" width = 180>
 </p><br>
+</td>
+</tr>
+</table>
 </div>
+</div>
+<div class="rightcolumn">
+    <div class="card"><font face="Georgia" color="#353A34">
+      <h2 style = "margin-top: 0px">Playlist</h2>
+	  <p style = "text-indent: 0px; margin-left: 0px; margin-right: 0px">Songs to play while you read through our website!</p>
+	  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/05C8maZkfHzFwZmOzGIWEP?utm_source=generator" width="100%" height="360" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><br><br>
+      </font>
+    </div>
+	<div class="gallery"><font face="georgia" color="#353A34">
+	<p style = "margin-top: 95px"></p>
+	<p align = "center" style = "margin-bottom: 0px; margin-left: 0px; margin-right: 0px; text-indent: 0px">
+	<img src = "gambar4.jpg" width = 160 height = 120><br><br>
+	<img src = "gambar6.jpg" width = 160 height = 120><br><br>
+	<img src = "gambar5.jpg" width = 160 height = 160><br><br>
+	<img src = "gambar7.jpg" width = 160 height = 120><br><br>
+	<img src = "gambar9.jpg" width = 160 height = 160><br><br>
+	<a href = "video.html">
+	<video height =160 width = 220 controls>
+	<source src = "video.mp4" type = "video/mp4">
+	</a>	
+	</p><br>
+    </div>
+</div>
+</div>
+<br>
+<br>
+<div class = "creator" style = "border: solid; border-color: #FAE21B">
+<font face= "georgia" size=3 color="#353A34">
+<marquee align=center behavior = "scroll" direction = "right" height="60" width="1300" scrollamount=20>
+<font face="dancing script" size=5 color = "white"> Created by: </font> <br> 
+<font align= center face="calibri" size=3 color = "white">Kelompok 3 - Hanna 91/1, Alexa 91/4, Angel 91/8, Kayleen 91/9, Sandra 91/11 </font>
+</marquee>
+</div>
+</font>
 </body>
 </html>

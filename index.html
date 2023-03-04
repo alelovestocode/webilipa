@@ -2,12 +2,143 @@
 <head>
 <title>Web IL IPA</title>
 </head>
-<frameset rows = "27, 64, 9">
-	<frame name =judul src = "judul banner.html">
-<frameset cols = "80.5, 19.5">
-	<frame name =berita src = "isi.html">
-	<frame name =galeri src = "galeri.html">
-</frameset>
-	<frame name =creator src = "creator.html">
-</frameset>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #CDDDDC;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  background-color: #CDDDDC;
+  color: #353A34;
+  text-align: center;
+  font-size: 16px;
+  font-family: "georgia", serif;
+  padding: 12px;
+  min-width: 218.8px;
+  height: 40px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #D0A47D;
+  color: #353A34;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 65%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 35%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+
+.card {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #CDDDDC;
+}
+
+.gallery {
+  padding: 20px;
+  margin-top: 20px;
+  background-image: url("gallery again.png");
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.creator {
+  background-color: #01A671;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 55px;
+  border-width: 8px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+</style>
+</head>
+<body>
+<img src = "banner il ipa.jpg" width = 1313>
+
+<div class="topnav">
+  <a href="index.html"><B>HOME</B></a>
+  <a href="pengantar.html"><b>KATA PENGANTAR</b></a>
+  <a href="abstrak.html"><b>ABSTRAK</b></a>
+  <a href="bab1.html"><b>BAB I</b></a>
+  <a href="bab2.html"><b>BAB II</b></a>
+  <a href="bab3.html"><b>BAB III</b></a>
+  <a href="bab4.html"><b>BAB IV</b></a>
+  <a href="bab5.html"><b>BAB V</b></a>
+  <a href="autobiografi.html"><b>DATA PENULIS</b></a>
+  <a href="pustaka.html"><b>DAFTAR PUSTAKA</b></a>
+  <a href="presentasi.html"><b>PRESENTATION</b></a>
+  <a href="games.html"><b>GAMES</b></a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2><font face="georgia" color="#353A34">MEET OUR TEAM!</h2>
+      <h5><i>Presenting you, the biodegradable spoon team!</i></font></h5>
+	  <img src = "foto7.jpeg" width=800 height=600><font face= "times new roman" size=4><br>
+      <p style = "margin-left: 10px; margin-right: 10px" align = "justify">Kami, kelompok 3 <i>Integrated Learning</i> IPA, memiliki 5 anggota. Kelompok ini terdiri dari: <b>Abigail Hanna Liany Pardede</b> (91-1), <b>Alexandra Silvia</b> (91-4), <b>Angelica Wijaya</b> (91-8), <b>Angelique Kayleen Lesmana</b> (91-9), <b>Bernadette Chrisandra Widjaja</b> (91-11).</p> 
+	  <p style = "margin-left: 10px; margin-right: 10px" align = "justify">Tahukah Anda? Jakarta telah dinobatkan sebagai kota paling tercemar di dunia! Maka, kami telah menyajikan sebuah solusi untuk mengurangi jumlah sampah plastik di lingkungan sekitar, khususnya sampah sendok plastik. Sampah plastik adalah masalah lingkungan terbesar saat ini dan memiliki dampak yang sangat buruk bagi lingkungan sekitar karena dapat merupakan sumber polusi.  Oleh karena itu, kami telah melakukan penelitian ini untuk membuat sebuah produk bioteknologi yang ramah lingkungan, yaitu <b>Sendok <i>Biodegradable</i></b>!</p>
+	  </font>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card"><font face="Georgia" color="#353A34">
+      <h2 style = "margin-top: 0px">Playlist</h2>
+	  <p>Songs to play while you read through our website!</p>
+	  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/05C8maZkfHzFwZmOzGIWEP?utm_source=generator" width="100%" height="358" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe><br><br>
+      </font>
+    </div>
+    <div class="gallery"><font face="georgia" color="#353A34">
+	<p style = "margin-top: 90px"></p>
+	<a href = "video.html">
+	<video height =345 width = 400 controls>
+	<source src = "video.mp4" type = "video/mp4">
+	</a>
+    </div>
+</div>
+</div>
+<br>
+<div class = "creator" style = "border: solid; border-color: #FAE21B">
+<font face= "georgia" size=3 color="#353A34">
+<marquee align=center behavior = "scroll" direction = "right" height="60" width="1300" scrollamount=20>
+<font face="dancing script" size=5 color = "white"> Created by: </font> <br> 
+<font align= center face="calibri" size=3 color = "white">Kelompok 3 - Hanna 91/1, Alexa 91/4, Angel 91/8, Kayleen 91/9, Sandra 91/11 </font>
+</marquee>
+</div>
+</body>
 </html>
